@@ -24,9 +24,7 @@ const myInventory = [
 function renderApp(section) {
     const container = document.getElementById('cardsWrapper');
     if (!container) return;
-    
     container.innerHTML = '';
-
     const filtered = myInventory.filter(item => item.category === section);
 
     filtered.forEach(item => {
@@ -47,7 +45,9 @@ function renderApp(section) {
     });
 
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById('btn-' + section).classList.add('active');
+    const currentBtn = document.getElementById('btn-' + section);
+    if (currentBtn) currentBtn.classList.add('active');
+    container.scrollLeft = 0;
 }
 
 renderApp('arms');
