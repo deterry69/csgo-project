@@ -1,13 +1,94 @@
 {
-    "name": "csgo",
-    "version": "1.0.0",
-    "descripcion": "yes",
-    "main": "index.html",
-    "dependences": {},
-    "author": "Alfonso",
-    "license": "ISC",
-    "dependencies": {
-        "bootstrap": "^5.3.8",
-        "json-server": "^1.0.0-beta.15"
+  "items": [
+    {
+      "id": 1,
+      "category": "modes",
+      "title": "Competitive",
+      "subtitle": "5v5 Matchmaking",
+      "year": "2024",
+      "description": "The gold standard of CS. Two teams of five, tactical strategy, and a 30-round limit.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 2,
+      "category": "modes",
+      "title": "Wingman",
+      "subtitle": "2v2 Partners",
+      "year": "2024",
+      "description": "Fast-paced duo combat on single-site maps. Perfect for tactical pairs.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 3,
+      "category": "modes",
+      "title": "Deathmatch",
+      "subtitle": "Free For All",
+      "year": "2024",
+      "description": "Instant respawn. Practice your spray control and reflexes with any weapon.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 4,
+      "category": "maps",
+      "title": "Mirage",
+      "subtitle": "Defusal Group",
+      "year": "2024",
+      "description": "One of the most balanced maps in the game, set in a Middle Eastern city.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 5,
+      "category": "maps",
+      "title": "Dust II",
+      "subtitle": "The Legend",
+      "year": "2024",
+      "description": "The most iconic map in FPS history. Simple layout, high skill ceiling.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 6,
+      "category": "maps",
+      "title": "Nuke",
+      "subtitle": "Nuclear Plant",
+      "year": "2024",
+      "description": "A vertical map set in a power plant with two bombsites stacked on each other.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 7,
+      "category": "arms",
+      "title": "Butterfly Knife",
+      "subtitle": "Fade Skin",
+      "year": "2024",
+      "description": "Famous for its unique inspection animations and vibrant color gradient.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 8,
+      "category": "arms",
+      "title": "M4A1-S",
+      "subtitle": "Printstream",
+      "year": "2024",
+      "description": "The silenced rifle preferred for its accuracy and pearlescent finish.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 9,
+      "category": "arms",
+      "title": "AWP",
+      "subtitle": "Dragon Lore",
+      "year": "2024",
+      "description": "The most expensive and legendary sniper skin in the Counter-Strike universe.",
+      "image": "REPLACE_WITH_IMAGE_URL"
+    },
+    {
+      "id": 10,
+      "category": "arms",
+      "title": "AK-47",
+      "subtitle": "Gold Arabesque",
+      "year": "2024",
+      "description": "A luxury version of the world's most famous assault rifle.",
+      "image": "REPLACE_WITH_IMAGE_URL"
     }
+  ]
 }
