@@ -13,16 +13,20 @@
 <body class="no-vertical-scroll">
 
     <header class="main-header">
-        <div class="container h-100 d-flex justify-content-between align-items-center">
+        <div class="container h-100">
             <div class="logo-area d-flex align-items-center">
                 <img src="https://res.cloudinary.com/dbadhyp7x/image/upload/v1777461418/Gemini_Generated_Image_zbiqf2zbiqf2zbiq_Nero_AI_Background_Remover_transparent_au75qv.png" alt="Logo" class="nav-logo">
                 <h1 class="ms-3">CSGO PROYECT</h1>
             </div>
-            <nav>
+            <nav class="d-flex align-items-center justify-content-center gap-2">
                 <button class="nav-btn" id="btn-modes" onclick="renderApp('modes')">Modes</button>
                 <button class="nav-btn" id="btn-maps" onclick="renderApp('maps')">Maps</button>
                 <button class="nav-btn active" id="btn-arms" onclick="renderApp('arms')">Arms</button>
             </nav>
+            <div class="header-right">
+                <!-- IMAGEN MUTE/DESMUTE: el src lo gestiona main.js con IMG_SOUND e IMG_MUTE -->
+                <img id="muteBtn" src="" alt="Mute" class="mute-btn" onclick="toggleMute()">
+            </div>
         </div>
     </header>
 
@@ -30,13 +34,10 @@
         <div class="video-background">
             <video autoplay muted loop playsinline id="bgVideo">
                 <source src="https://res.cloudinary.com/dbadhyp7x/video/upload/v1777886746/LLUVIA_1_yxlhyo.mp4" type="video/mp4">
-                Tu navegador no soporta vídeo.
             </video>
             <div class="video-overlay"></div>
         </div>
-
-        <div id="cardsWrapper" class="horizontal-container">
-        </div>
+        <div id="cardsWrapper" class="horizontal-container"></div>
     </main>
 
     <footer class="main-footer">
@@ -51,6 +52,28 @@
         </div>
     </footer>
 
+    <audio id="bgMusic" loop>
+        <source src="https://res.cloudinary.com/dbadhyp7x/video/upload/v1778502091/Grabaci%C3%B3n_2026-05-11_141530_va7thq.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound">
+        <source src="https://res.cloudinary.com/dbadhyp7x/video/upload/v1778502391/videoplayback_pcz8dd.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="main.js"></script>
+
+    <div id="cookieOverlay"></div>
+
+    <div id="cookieBanner">
+        <div class="cookie-text">
+            <strong>🍪 COOKIES — CSGO PROYECT</strong>
+            We use cookies to improve your gaming experience on the site. You can accept or reject them. Your choice will be saved for future visits.
+            <a href="#">More information</a>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn-cookie-reject" onclick="cookieChoice(false)">Reject</button>
+            <button class="btn-cookie-accept" onclick="cookieChoice(true)">Accept</button>
+        </div>
+    </div>
+
 </body>
 </html>
